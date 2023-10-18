@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class FavoriteSymbol extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'symbol',
+        'price',
+    ];
 }

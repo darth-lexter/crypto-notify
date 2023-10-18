@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FavoriteSymbolController;
 use App\Http\Controllers\PriceListController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::controller(PriceListController::class)->group(function () {
-    Route::get('/price-list', 'getPriceList');
+Route::controller(FavoriteSymbolController::class)->group(function () {
+    Route::get('/favorites', 'export');
 });

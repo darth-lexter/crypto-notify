@@ -18,7 +18,7 @@ class BotSignalSeeder extends Seeder
         DB::table('bot_signals')->insert([
             'active' => true,
             'type' => BotSignalType::PRICE_UP,
-            'rule_limit' => 30000,
+            'rule_limit' => 21000,
             'symbol' => 'BTCUSDT',
             'comment' => 'Sell!',
             'created_at' => new \DateTime(),

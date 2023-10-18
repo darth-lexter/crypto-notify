@@ -15,6 +15,8 @@ class CreateFavoriteSymbolsTable extends Migration
     {
         Schema::create('favorite_symbols', function (Blueprint $table) {
             $table->id();
+            $table->string('symbol');
+            $table->double('price');
             $table->timestamps();
         });
     }
