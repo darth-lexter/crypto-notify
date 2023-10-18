@@ -21,4 +21,3 @@ Route::get('/', function () {
 Route::controller(PriceListController::class)->group(function () {
     Route::get('/price-list', 'getPriceList');
 });
-

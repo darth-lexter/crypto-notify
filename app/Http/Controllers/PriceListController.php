@@ -9,8 +9,9 @@ class PriceListController extends Controller
 {
     public function getPriceList(BinanceService $binanceService, SignalCheckerService $checkerService): array
     {
-        $checkerService->checkSignals();
+//        $checkerService->checkSignals();
 
-        return $binanceService->getPriceList();
+        $currentBtcPrice = $binanceService->getCurrentBtcPrice();
+        dd($currentBtcPrice);
     }
 }
